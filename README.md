@@ -5,7 +5,7 @@ Welcome to the Brain Tumor Classification Using Quantum Transfer Learning projec
 This project explores the efficacy of Quantum Transfer Learning (QTL) in the realm of brain tumor classification, comparing its performance against traditional transfer learning methodologies. The core idea is to enhance classification accuracy and robustness by employing quantum computing principles.
 
 ## Key Features
-Quantum Gate Integration: Implemented Hadamard, CNOT, and Ry gates to construct the quantum transfer learning model.
+Quantum Gate Integration: Implemented Hadamard, CNOT, and Ry gates to construct the quantum transfer learning model.<br/>
 Traditional vs. Quantum: Compared the performance of QTL with traditional transfer learning models, including ResNet and other state-of-the-art models from research papers.
 Extensive Testing: Evaluated the robustness of the models with various data augmentation techniques.
 

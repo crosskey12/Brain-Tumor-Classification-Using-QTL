@@ -9,21 +9,21 @@ We conducted a comprehensive literature survey to identify state-of-the-art meth
 ### Traditional Feature Extractors
 We applied the following six traditional feature extractors to the Chen Medical dataset:
 
-ResNet-50
-ResNet-512
-VGG-16
-VGG-19
-MobileNet
-XceptionNet
-InceptionNet
+ResNet-50<br/>
+ResNet-512<br/>
+VGG-16<br/>
+VGG-19<br/>
+MobileNet<br/>
+XceptionNet<br/>
+InceptionNet<br/>
 ### Quantum Circuit Classifiers
 For the quantum classification, we used two different quantum circuits:
 
-Quantum Circuit 1:
-Layers: AngleEmbedding layer, Basic Untangling layer, and PauliZ layer.
-Quantum Circuit 2:
-Layers: Hadamard gate, CNOT gate, and Ry gate.
-Feature Extractor: ResNet-50 (benchmark FE)
+#### Quantum Circuit 1:<br/>
+Layers: AngleEmbedding layer, Basic Untangling layer, and PauliZ layer.<br/>
+#### Quantum Circuit 2:<br/>
+Layers: Hadamard gate, CNOT gate, and Ry gate.<br/>
+Feature Extractor: ResNet-50 (benchmark FE)<br/>
 
 ## Implementation of Research Paper Models
 We implemented the models from the three selected journal papers and evaluated their performance on the Chen Medical dataset. These implementations served as benchmarks for comparing the effectiveness of our proposed quantum transfer learning approach.
@@ -31,10 +31,10 @@ We implemented the models from the three selected journal papers and evaluated t
 ## Implementation
 We implemented the models using Python and various deep learning and quantum computing libraries. The primary steps included:
 
-Preprocessing the Chen Medical dataset.
-Extracting features using the traditional feature extractors.
-Feeding the extracted features into the quantum circuit classifiers.
-Evaluating the performance of each model.
+Preprocessing the Chen Medical dataset.<br/>
+Extracting features using the traditional feature extractors.<br/>
+Feeding the extracted features into the quantum circuit classifiers.<br/>
+Evaluating the performance of each model.<br/>
 
 ## Results
 The results demonstrated that combining traditional feature extractors with quantum circuit classifiers can enhance the performance of brain tumor classification models. Detailed results and comparisons are available in the project repository.

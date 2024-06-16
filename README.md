@@ -25,7 +25,7 @@ Quantum Circuit 2:
 Layers: Hadamard gate, CNOT gate, and Ry gate.
 Feature Extractor: ResNet-50 (benchmark FE)
 
-Implementation of Research Paper Models
+## Implementation of Research Paper Models
 We implemented the models from the three selected journal papers and evaluated their performance on the Chen Medical dataset. These implementations served as benchmarks for comparing the effectiveness of our proposed quantum transfer learning approach.
 
 ## Implementation

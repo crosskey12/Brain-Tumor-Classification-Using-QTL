@@ -1,37 +1,41 @@
-# Brain-Tumor-Classification-Using-QTL
-Welcome to the Brain Tumor Classification Using Quantum Transfer Learning project! This repository showcases an innovative approach to brain tumor classification by leveraging Quantum Transfer Learning (QTL). By integrating quantum gates like Hadamard, CNOT, and Ry, this project aims to push the boundaries of medical image classification.
+# Brain Tumor Classification using Quantum Transfer Learning
+## Project Overview
+This project focuses on classifying brain tumors using a combination of traditional feature extraction methods and quantum transfer learning techniques. We implemented models based on three selected journal papers and tested them on the Chen Medical dataset. Our approach involved utilizing six different traditional feature extractors and combining them with quantum circuit classifiers to improve classification performance.
 
-## Overview
-This project explores the efficacy of Quantum Transfer Learning (QTL) in the realm of brain tumor classification, comparing its performance against traditional transfer learning methodologies. The core idea is to enhance classification accuracy and robustness by employing quantum computing principles.
+## Literature Survey
+We conducted a comprehensive literature survey to identify state-of-the-art methods in brain tumor classification. From this survey, we selected three journal papers that provided the foundation for our implementation. Although we don't have a record of the literature survey or the papers, the chosen models significantly influenced our work.
 
-## Key Features
-Quantum Gate Integration: Implemented Hadamard, CNOT, and Ry gates to construct the quantum transfer learning model.<br/>
-Traditional vs. Quantum: Compared the performance of QTL with traditional transfer learning models, including ResNet and other state-of-the-art models from research papers.<br/>
-Extensive Testing: Evaluated the robustness of the models with various data augmentation techniques.<br/>
+## Methodology
+### Traditional Feature Extractors
+We applied the following six traditional feature extractors to the Chen Medical dataset:
 
-## Inference
-Our findings indicate that while Quantum Transfer Learning shows promise, it requires a significantly larger dataset compared to traditional approaches. For this specific problem, QTL did not surpass the performance of traditional models like ResNet but demonstrated comparable results with some research paper models and traditional models.
+ResNet-50
+ResNet-512
+VGG-16
+VGG-19
+MobileNet
+XceptionNet
+InceptionNet
+### Quantum Circuit Classifiers
+For the quantum classification, we used two different quantum circuits:
 
-## Work Done
-Quantum Gate Variations: Experimented with different quantum gate combinations, including:<br/>
+Quantum Circuit 1:
+Layers: AngleEmbedding layer, Basic Untangling layer, and PauliZ layer.
+Quantum Circuit 2:
+Layers: Hadamard gate, CNOT gate, and Ry gate.
+Feature Extractor: ResNet-50 (benchmark FE)
 
-Angle Embedding Layer<br/>
-BasicEntangler Layers<br/>
-PauliZ, Hadamard, CNOT, and Ry gates<br/>
-Model Implementation: Implemented and tested various models from research papers and traditional feature extractors to benchmark the performance of the quantum approach.<br/>
+## Implementation
+We implemented the models using Python and various deep learning and quantum computing libraries. The primary steps included:
 
-Data Augmentation: Applied different data augmentation techniques to evaluate model robustness. Some models performed exceptionally well with simpler augmentations, providing insights into the strengths and limitations of the quantum approach.
+Preprocessing the Chen Medical dataset.
+Extracting features using the traditional feature extractors.
+Feeding the extracted features into the quantum circuit classifiers.
+Evaluating the performance of each model.
 
-## Repository Structure
-Notebooks: Jupyter notebooks containing the code and experiments for quantum and traditional transfer learning.<br/>
-Models: Pre-trained models and scripts for training new models.<br/>
-Results: Detailed results and analysis of the experiments.<br/>
+## Results
+The results demonstrated that combining traditional feature extractors with quantum circuit classifiers can enhance the performance of brain tumor classification models. Detailed results and comparisons are available in the project repository.
 
-## Contributing
-We welcome contributions to enhance this project! If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
+## Acknowledgements
+We would like to thank the authors of the three journal papers for their valuable contributions to this field. Special thanks to the developers of the libraries we used in this project.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Contact
-For any questions or inquiries, please reach out to aditya1123sam@gmail.com
